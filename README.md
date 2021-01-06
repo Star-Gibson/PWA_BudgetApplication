@@ -4,7 +4,7 @@
 
 ## Description
 
-The Budget Tracker is a progressive web application that gives users the ability to track their budget by allowing them to add expenses or deposits by using the "add funds/subtract funds buttons. This application has the ability to function while offline by storing offline transactions to the IndexDB. Upon going back online these transactions are transferred to the mongoDB.
+The Budget Tracker is a progressive web application that gives users the ability to track their budget by allowing them to add expenses or deposits by using the "add funds/subtract funds" buttons. This application has the ability to function while offline by storing offline transactions to the IndexDB. Upon going back online these transactions are transferred to the mongoDB.
 
 ## Table of Contents
 
