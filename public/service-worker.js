@@ -1,5 +1,8 @@
 const FILES_TO_CACHE = [
    "/",
+   "/index.html",
+   "/styles.css",
+   "/manifest.json",
    "/index.js",
    "/db.js",
    "/icons/icon-192x192.png",
@@ -71,5 +74,6 @@ const FILES_TO_CACHE = [
         return response || fetch(evt.request);
       })
     );
+    console.log("SW Complete");
   });
   
