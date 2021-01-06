@@ -1,5 +1,6 @@
 const FILES_TO_CACHE = [
-   // Include files to Cache.
+   "/",
+   "./index.js",
 
   ];
   
@@ -34,7 +35,7 @@ const FILES_TO_CACHE = [
   
     self.clients.claim();
   });
-  
+  console.log("Test");
   // fetch
   self.addEventListener("fetch", function(evt) {
     // cache successful GET requests to the API
@@ -59,7 +60,7 @@ const FILES_TO_CACHE = [
     // Stops execution of the fetch event callback
       return;
     }
-  
+    console.log("Test");
     // if the request is not for the API, serve static assets using "offline-first" approach.
     evt.respondWith(
       caches.match(evt.request).then(function(response) {
@@ -67,3 +68,4 @@ const FILES_TO_CACHE = [
       })
     );
   });
+  console.log("Test");
